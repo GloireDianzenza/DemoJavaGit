@@ -15,10 +15,13 @@ public class Etudiant
     
     private String nom;
     
-    public Etudiant(int I,String name)
+    private double moyenne;
+    
+    public Etudiant(int I,String name,double m)
     {
         id = I;
         nom = name;
+        moyenne = m;
     }
     
     public int getId()
@@ -43,5 +46,19 @@ public class Etudiant
      */
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    /**
+     * @return the moyenne
+     */
+    public double getMoyenne() {
+        return moyenne;
+    }
+
+    /**
+     * @param moyenne the moyenne to set
+     */
+    public void setMoyenne(double moyenne) {
+        this.moyenne = moyenne;
     }
 }
